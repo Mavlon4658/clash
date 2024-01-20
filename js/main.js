@@ -84,6 +84,17 @@ if (hall_show.length) {
     })
 }
 
+let account_slider = document.querySelector('.account_slider .swiper')
+if (account_slider) {
+    let accountSlider = new Swiper(account_slider, {
+        slidesPerView: 1,
+        navigation: {
+            nextEl: '.account_slider .next_btn',
+            prevEl: '.account_slider .prev_btn'
+        }
+    })
+}
+
 function disableScrolling(){
     var x=window.scrollX;
     var y=window.scrollY;
