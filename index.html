@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Clash of Clans</title>
+    <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <!-- css file -->
     <link rel="stylesheet" href="./css/style.css">
 </head>
@@ -20,29 +22,48 @@
                     </a>
                     <ul class="navs">
                         <li>
-                            <a href="#">Аккаунты</a>
+                            <a href="#" data-text="Аккаунты">Аккаунты</a>
                         </li>
                         <li>
-                            <a href="#">Гемы</a>
+                            <a href="#" data-text="Гемы">Гемы</a>
                         </li>
                         <li>
-                            <a href="#">Отзывы</a>
+                            <a href="#" data-text="Отзывы">Отзывы</a>
                         </li>
                         <li>
-                            <a href="#">Новости</a>
+                            <a href="#" data-text="Новости">Новости</a>
                         </li>
                         <li>
-                            <a href="#">Разное</a>
+                            <a href="#" data-text="Разное">Разное</a>
                         </li>
                     </ul>
                     <div class="header__right_block">
                         <a href="#" class="btn_success">
                             <span class="btn_success__text">
-                                Supercell
-                                <button class="btn_dark"><span>ID</span></button>
+                                <span data-text="Supercell">Supercell</span>
+                                <button class="btn_dark"><span data-text="ID">ID</span></button>
                             </span>
                         </a>
-                        ru
+                        <div class="lang">
+                            <button class="lang_selected">
+                                <img src="./images/flag_ru.svg" alt="">
+                                <span data-text="RU">RU</span>
+                            </button>
+                            <ul>
+                                <li>
+                                    <a href="#" class="btn_success">
+                                        <img src="./images/flag_ru.svg" alt="">
+                                        <span data-text="RU">RU</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="btn_success">
+                                        <img src="./images/flag_en.svg" alt="">
+                                        <span data-text="EN">EN</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -62,7 +83,7 @@
                 <!-- Important information -->
                 <div class="information">
                     <div class="information__head">
-                        <span>Важная информация</span>
+                        <span data-text="Важная информация">Важная информация</span>
                     </div>
                     <div class="information__content">
                         <div class="left_block">
@@ -73,7 +94,7 @@
                             <p>Откройте для себя уникальную возможность приобретения аккаунтов, обеспеченных передовой системой защиты от мошенников Supercell ID Control от опытных игроков в Clash of Clans! Наша элитная торговая площадка приглашает вас стать частью увлекательного мира, предлагая уникальную возможность приобрести или продать аккаунт Clash of Clans, не беспокоясь о потере ваших денег. Успейте воспользоваться этой возможность и воплотите в жизнь геймерские амбиции.</p>
                             <div class="btn_wrap">
                                 <a href="#" class="btn_success">
-                                    <span>Купить</span>
+                                    <span data-text="Купить">Купить</span>
                                 </a>
                             </div>
                         </div>
@@ -84,7 +105,7 @@
                 <!-- Reliable protection -->
                 <div class="information protection">
                     <div class="information__head protection__head">
-                        <span>Надёжная защита</span>
+                        <span data-text="Надёжная защита">Надёжная защита</span>
                     </div>
                     <div class="information__content protection__content">
                         <div class="left_block">
@@ -94,9 +115,9 @@
                             <p>Покупай проверенные аккаунты от реальных игроков с системой защиты от мошенничества!</p>
                             <div class="btn_wrap">
                                 <a href="#" class="btn_dark">
-                                    <span>Supercell</span>
-                                    <span>ID</span>
-                                    <span>Control</span>
+                                    <span data-text="Supercell">Supercell</span>
+                                    <span data-text="ID">ID</span>
+                                    <span data-text="Control">Control</span>
                                 </a>
                             </div>
                         </div>
@@ -105,10 +126,10 @@
                 <!-- Reliable protection end -->
 
                 <div class="accounts">
-                    <h2>Аккаунты</h2>
+                    <h2 data-text="Аккаунты">Аккаунты</h2>
                     <div class="accounts__lists">
                         <div class="accounts__list">
-                            <div class="title">Ратуша 9 уровня</div>
+                            <div class="title" data-text="Ратуша 9 уровня">Ратуша 9 уровня</div>
                             <div class="content">
                                 <div class="img">
                                     <img src="./images/accounts_list_bg.png" alt="" class="bg">
@@ -120,13 +141,13 @@
                                     </span>
                                 </button>
                                 <button class="price">
-                                    867,56
-                                    <span>₽</span>
+                                    <span data-text="867,56">867,56</span>
+                                    <span class="currency" data-text="₽">₽</span>
                                 </button>
                             </div>
                         </div>
                         <div class="accounts__list">
-                            <div class="title">Ратуша 11 уровня</div>
+                            <div class="title" data-text="Ратуша 11 уровня">Ратуша 11 уровня</div>
                             <div class="content">
                                 <div class="img">
                                     <img src="./images/accounts_list_bg.png" alt="" class="bg">
@@ -138,13 +159,13 @@
                                     </span>
                                 </button>
                                 <button class="price">
-                                    867,56
-                                    <span>₽</span>
+                                    <span data-text="867,56">867,56</span>
+                                    <span class="currency" data-text="₽">₽</span>
                                 </button>
                             </div>
                         </div>
                         <div class="accounts__list warning">
-                            <div class="title">Ратуша 13 уровня</div>
+                            <div class="title" data-text="Ратуша 13 уровня">Ратуша 13 уровня</div>
                             <div class="content">
                                 <div class="img">
                                     <img src="./images/accounts_list_bg.png" alt="" class="bg">
@@ -156,13 +177,13 @@
                                     </span>
                                 </button>
                                 <button class="price">
-                                    867,56
-                                    <span>₽</span>
+                                    <span data-text="867,56">867,56</span>
+                                    <span class="currency" data-text="₽">₽</span>
                                 </button>
                             </div>
                         </div>
                         <div class="accounts__list warning">
-                            <div class="title">Ратуша 14 уровня</div>
+                            <div class="title" data-text="Ратуша 14 уровня">Ратуша 14 уровня</div>
                             <div class="content">
                                 <div class="img">
                                     <img src="./images/accounts_list_bg.png" alt="" class="bg">
@@ -174,13 +195,13 @@
                                     </span>
                                 </button>
                                 <button class="price">
-                                    867,56
-                                    <span>₽</span>
+                                    <span data-text="867,56">867,56</span>
+                                    <span class="currency" data-text="₽">₽</span>
                                 </button>
                             </div>
                         </div>
                         <div class="accounts__list purple">
-                            <div class="title">Ратуша 15 уровня</div>
+                            <div class="title" data-text="Ратуша 15 уровня">Ратуша 15 уровня</div>
                             <div class="content">
                                 <div class="img">
                                     <img src="./images/accounts_list_bg.png" alt="" class="bg">
@@ -192,13 +213,13 @@
                                     </span>
                                 </button>
                                 <button class="price">
-                                    867,56
-                                    <span>₽</span>
+                                    <span data-text="867,56">867,56</span>
+                                    <span class="currency" data-text="₽">₽</span>
                                 </button>
                             </div>
                         </div>
                         <div class="accounts__list purple">
-                            <div class="title">Ратуша 16 уровня</div>
+                            <div class="title" data-text="Ратуша 16 уровня">Ратуша 16 уровня</div>
                             <div class="content">
                                 <div class="img">
                                     <img src="./images/accounts_list_bg.png" alt="" class="bg">
@@ -210,8 +231,8 @@
                                     </span>
                                 </button>
                                 <button class="price">
-                                    867,56
-                                    <span>₽</span>
+                                    <span data-text="867,56">867,56</span>
+                                    <span class="currency" data-text="₽">₽</span>
                                 </button>
                             </div>
                         </div>
@@ -219,22 +240,22 @@
                     <ul class="accounts__pagination">
                         <li>
                             <a href="#" class="btn_primary active">
-                                <span>1</span>
+                                <span data-text="1">1</span>
                             </a>
                         </li>
                         <li>
                             <a href="#" class="btn_primary">
-                                <span>2</span>
+                                <span data-text="2">2</span>
                             </a>
                         </li>
                         <li>
                             <a href="#" class="btn_primary">
-                                <span>3</span>
+                                <span data-text="3">3</span>
                             </a>
                         </li>
                         <li>
                             <a href="#" class="btn_primary">
-                                <span>4</span>
+                                <span data-text="4">4</span>
                             </a>
                         </li>
                     </ul>
@@ -243,6 +264,7 @@
         </section>
         <!-- Home end -->
 
+        <!-- Footer -->
         <footer class="footer">
             <div class="main_container footer__top">
                 <a href="#" class="logo">
@@ -329,9 +351,217 @@
                 </ul>
             </div>
         </footer>
+        <!-- Footer end -->
 
+        <!-- Account modal -->
+        <div class="modal account_modal">
+            <div class="modal__bg"></div>
+            <div class="modal__content">
+                <div class="modal__content_border">
+                    <div class="modal__content_in">
+                        <div class="glass"></div>
+                        <button class="modal_close">
+                            <span class="modal_close_in">
+                                <span class="modal_close_text">
+                                    <img src="./images/close_icon.svg" alt="">
+                                </span>
+                            </span>
+                        </button>
+                        <div class="tab">
+                            <div class="tab_head">
+                                <button class="active" data-text="Шаг 1">Шаг 1</button>
+                                <button data-text="Шаг 2">Шаг 2</button>
+                                <button data-text="Шаг 3">Шаг 3</button>
+                            </div>
+                            <div class="tab_body">
+                                <div class="tab_item active">
+                                    <form>
+                                        <div class="form_group">
+                                            <div class="glass"></div>
+                                            <div class="title" data-text="Выберите способ оплаты">Выберите способ оплаты</div>
+                                            <div class="radios">
+                                                <button class="radio_btn" type="button">
+                                                    <input type="radio" name="radio_select" id="">
+                                                    <img src="./images/radio_icon_1.svg" alt="">
+                                                </button>
+                                                <button class="radio_btn" type="button">
+                                                    <input type="radio" name="radio_select" id="">
+                                                    <img src="./images/radio_icon_2.svg" alt="">
+                                                </button>
+                                                <button class="radio_btn" type="button">
+                                                    <input type="radio" name="radio_select" id="">
+                                                    <img src="./images/radio_icon_3.svg" alt="">
+                                                </button>
+                                                <button class="radio_btn" type="button">
+                                                    <input type="radio" name="radio_select" id="">
+                                                    <img src="./images/radio_icon_4.svg" alt="">
+                                                </button>
+                                                <button class="radio_btn" type="button">
+                                                    <input type="radio" name="radio_select" id="">
+                                                    <img src="./images/radio_icon_5.svg" alt="">
+                                                </button>
+                                                <button class="radio_btn" type="button">
+                                                    <input type="radio" name="radio_select" id="">
+                                                    <img src="./images/radio_icon_6.svg" alt="">
+                                                </button>
+                                                <button class="radio_btn" type="button">
+                                                    <input type="radio" name="radio_select" id="">
+                                                    <img src="./images/radio_icon_7.svg" alt="">
+                                                </button>
+                                                <button class="radio_btn" type="button">
+                                                    <input type="radio" name="radio_select" id="">
+                                                    <img src="./images/radio_icon_8.svg" alt="">
+                                                </button>
+                                                <button class="radio_btn" type="button">
+                                                    <input type="radio" name="radio_select" id="">
+                                                    <img src="./images/radio_icon_9.svg" alt="">
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <div class="btn_group">
+                                            <button type="submit" class="btn_success">
+                                                <span data-text="Далее">Далее</span>
+                                            </button>
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="tab_item">
+                                    <form>
+                                        <div class="form_group form_group_step_2">
+                                            <div class="glass"></div>
+                                            <div class="title" data-text="Укажите ваши данные">Укажите ваши данные</div>
+                                            <div class="radios radios_step_2">
+                                                <button class="radio_btn" type="button">
+                                                    <img src="./images/radio_icon_1.svg" alt="">
+                                                </button>
+                                            </div>
+                                            <div class="form_group__in">
+                                                <div class="form_control">
+                                                    <label data-text="Номер телефона">Номер телефона</label>
+                                                    <div class="input_wrap">
+                                                        <input type="tel" placeholder="+7 980 000 00 00">
+                                                    </div>
+                                                </div>
+                                                <div class="form_control">
+                                                    <label data-text="Адрес электронной почты">Адрес электронной почты</label>
+                                                    <div class="input_wrap">
+                                                        <input type="email" placeholder="mail@mail.com">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="btn_group">
+                                            <button type="button" class="btn_danger">
+                                                <span data-text="Назад">Назад</span>
+                                            </button>
+                                            <button type="submit" class="btn_success">
+                                                <span data-text="Далее">Далее</span>
+                                            </button>
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="tab_item">
+                                    <form>
+                                        <div class="form_group form_group_step_2">
+                                            <div class="glass"></div>
+                                            <div class="title" data-text="Проверка платежа">Проверка платежа</div>
+                                            <div class="radios radios_step_2">
+                                                <button class="radio_btn" type="button">
+                                                    <img src="./images/radio_icon_1.svg" alt="">
+                                                </button>
+                                            </div>
+                                            <div class="form_group__in form_group__in_step_2">
+                                                <p data-text="Спасибо! Счёт был выставлен успешно! На указанный вами телефонный номер будет выслано SMS с полной суммой платежа и инструкцией по его подтверждению"></p>
+                                                <ul>
+                                                    <li>
+                                                        <span class="left" data-text="Телефон:">Телефон:</span>
+                                                        <span data-text="+7 980 000 00 00">+7 980 000 00 00</span>
+                                                    </li>
+                                                    <li>
+                                                        <span class="left" data-text="Статус:">Статус:</span>
+                                                        <span class="progres" data-text="Ожидает оплаты">Ожидает оплаты</span>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="btn_group">
+                                            <button type="submit" class="btn_success">
+                                                <span data-text="Проверить">Проверить</span>
+                                            </button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Account modal end -->
+
+        <!-- Hall modal -->
+        <div class="modal hall_modal">
+            <div class="modal__bg"></div>
+            <div class="modal__content">
+                <div class="modal__content_border">
+                    <div class="modal__content_in">
+                        <div class="glass"></div>
+                        <button class="modal_close">
+                            <span class="modal_close_in">
+                                <span class="modal_close_text">
+                                    <img src="./images/close_icon.svg" alt="">
+                                </span>
+                            </span>
+                        </button>
+                        <div class="hall_title" data-text="Ратуша 11 уровня">Ратуша 11 уровня</div>
+                        <div class="hall_slider__wrap">
+                            <div class="hall_slider">
+                                <div class="glass"></div>
+                                <button class="btn_prev">
+                                    <img src="./images/slider_prev_btn.svg" alt="">
+                                </button>
+                                <div class="swiper">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <img src="./images/hall_screenshot.png" alt="">
+                                            <button class="zoom">
+                                                <img src="./images/zoom.svg" alt="">
+                                            </button>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="./images/hall_screenshot.png" alt="">
+                                            <button class="zoom">
+                                                <img src="./images/zoom.svg" alt="">
+                                            </button>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="./images/hall_screenshot.png" alt="">
+                                            <button class="zoom">
+                                                <img src="./images/zoom.svg" alt="">
+                                            </button>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="./images/hall_screenshot.png" alt="">
+                                            <button class="zoom">
+                                                <img src="./images/zoom.svg" alt="">
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <button class="btn_next">
+                                    <img src="./images/slider_next_btn.svg" alt="">
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Hall modal end -->
     </div>
     
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <!-- js file -->
     <script src="./js/main.js"></script>
 </body>
