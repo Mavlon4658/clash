@@ -332,7 +332,7 @@ body {
     top: 24px;
     left: 0;
     width: 100%;
-    z-index: 2;
+    z-index: 3;
 
     &_in {
         border-radius: 15px;
@@ -411,8 +411,16 @@ body {
                 font-weight: 800;
                 letter-spacing: 0.312px;
             }
+
+            .bars {
+                display: none;
+            }
         }
     }
+}
+
+.mobile_menu {
+    display: none;
 }
 // Header end
 
@@ -954,7 +962,6 @@ body {
         }
     }
 }
-
 // Footer end
 
 // Account modal
@@ -2255,3 +2262,5 @@ body {
     }
 }
 // Account home end
+
+@import 'responsive';

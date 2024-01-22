@@ -114,3 +114,14 @@ function closeModal () {
         }
     })
 }
+
+let bars = document.querySelector('button.bars');
+let mobile_menu = document.querySelector('.mobile_menu')
+let mobile_menu_bg = document.querySelector('.mobile_menu__bg');
+bars.onclick = () => {
+    mobile_menu.classList.add('active');
+}
+
+mobile_menu_bg.onclick = () => {
+    mobile_menu.classList.remove('active');
+}
