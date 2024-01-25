@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'Supercell-Magic';
-    src: url('../fonts/Supercell-Magic.ttf');
+    src: url('../fonts/supercell-magic.woff');
     // src: url('../fonts/Supercell-Magic.ttf') format('embedded-opentype'),
     //     url('../fonts/Supercell-Magic.ttf') format('ttf'),
     //     url('../fonts/Supercell-Magic.ttf') format('truetype'),
@@ -485,7 +485,7 @@ body {
 
 // Home
 .home {
-    background: url('../images/home_b.png') center/cover no-repeat;
+    background: url('../images/home_b.webp') center/cover no-repeat;
     padding: 141px 0 102px;
     position: relative;
     overflow: hidden;

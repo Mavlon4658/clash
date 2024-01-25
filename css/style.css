@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@500;600&family=Nunito+Sans:opsz,wght@6..12,400;6..12,600&family=Poppins:wght@600&display=swap");
 @font-face {
   font-family: "Supercell-Magic";
-  src: url("../fonts/Supercell-Magic.ttf");
+  src: url("../fonts/supercell-magic.woff");
 }
 @font-face {
   font-family: "KZ Supercell-Magic";
@@ -419,7 +419,7 @@ body {
 }
 
 .home {
-  background: url("../images/home_b.png") center/cover no-repeat;
+  background: url("../images/home_b.webp") center/cover no-repeat;
   padding: 141px 0 102px;
   position: relative;
   overflow: hidden;
